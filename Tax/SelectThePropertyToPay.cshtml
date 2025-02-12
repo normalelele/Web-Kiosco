@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fisco.Pay</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script type="module" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="module" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="~/js/Tax/SelectThePropertyToPay.js"></script>
+    <style>
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="ms-4">
+            <h1 style="color: #FFFFFF">Alcaldía de Valledupar</h1>
+            <h6 style="color: #FFFFFF">Bienvenidos al portal de pagos</h6>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="w-100">
+            <h6 class="text-star text-impuesto-unificado mt-2 ms-4">Impuesto Predial Unificado</h6>
+        </div>
+
+        <h4 class="mb-4">Seleccione el predio a pagar</h4>
+
+        <div class="m-0 p-0 mb-2">
+            <div class="form-check">
+                <input id="radio1" name="searchCriteria" class="form-check-input" type="radio" checked>
+                <label class="form-check-label" for="radio1">Cl 1** 2* 42</label>
+            </div>
+
+            <div class="form-check">
+                <input id="radio2" name="searchCriteria" class="form-check-input" type="radio">
+                <label class="form-check-label" for="radio2">Cl 1** 2* 42</label>
+            </div>
+
+            <div class="form-check">
+                <input id="radio3" name="searchCriteria" class="form-check-input" type="radio">
+                <label class="form-check-label" for="radio3">Cl 1** 2* 42</label>
+            </div>
+
+            <div class="form-check">
+                <input id="radio4" name="searchCriteria" class="form-check-input" type="radio">
+                <label class="form-check-label" for="radio4">Cl 1** 2* 42</label>
+            </div>
+
+            <div class="form-check">
+                <input id="radio5" name="searchCriteria" class="form-check-input" type="radio">
+                <label class="form-check-label" for="radio5">Cl 1** 2* 42</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer m-0 p-0 ms-1">
+        <button id="backButton" name="backButton" class="btn btn-secondary btn-lg rounded-pill ms-2 me-2">Atrás</button>
+        <button id="continueButton" name="continueButton" class="btn btn-success btn-lg rounded-pill ms-2 me-2">Continuar</button>
+    </div>
+
+</body>
+</html>

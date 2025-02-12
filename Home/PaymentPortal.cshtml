@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fisco.Pay</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/Home/PaymentPortal.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="ms-4">
+            <h1 style="color: #FFFFFF">Alcaldía de Valledupar</h1>
+            <h6 style="color: #FFFFFF">Bienvenidos al portal de pagos</h6>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2 class="mb-4" style="color: #00205c">PAGA TUS IMPUESTOS DE FORMA FÁCIL Y SEGURA</h2>
+
+        <div class="cards">
+            <div id="cardPropertyTax" name="cardPropertyTax" class="card">
+                <img src="~/images/impuestoPredial.png" alt="Impuesto Predial">
+                <h6>Impuesto Predial</h6>
+            </div>
+
+            <div id="cardIndustryAndCommerce" name="cardIndustryAndCommerce" class="card">
+                <img src="~/images/industriaComercio.png" alt="Industria y Comercio">
+                <h6>Industria y comercio</h6>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer m-0 p-0 ms-1">
+        <button id="backButton" class="btn btn-secondary btn-lg rounded-pill ms-2 me-2">Atrás</button>
+    </footer>
+</body>
+</html>

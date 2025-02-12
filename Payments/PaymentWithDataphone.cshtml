@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fisco.Pay</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Payments/PaymentWithDataphone.js"></script>
+    <style>
+        .divCenter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="ms-4">
+            <h1 style="color: #FFFFFF">Alcaldía de Valledupar</h1>
+            <h6 style="color: #FFFFFF">Bienvenidos al portal de pagos</h6>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="divCenter">
+            <h3 style="color: #ADB5BD">Monto total a pagar</h3>
+            <h1>$650.000</h1>
+        </div>
+
+        <h4 class="mt-5">Por favor, sigas las instrucciones del datafono</h4>
+
+        <video class="ms-5" width="320" height="240" autoplay loop muted>
+            <source src="~/videos/PagoDebito.mp4" type="video/mp4">Tu navegador no soporta la reproducción de videos
+        </video>
+
+    </div>
+
+    <div class="footer">
+        <button id="backButton" name="backButton" class="btn btn-secondary btn-lg rounded-pill">Atrás</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fisco.Pay</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        .divCenter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="ms-4">
+            <h1 style="color: #FFFFFF">Alcaldía de Valledupar</h1>
+            <h6 style="color: #FFFFFF">Bienvenidos al portal de pagos</h6>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div>
+            <img src="~/images/successful.png" width="120" alt="Exitoso">
+        </div>
+
+        <h3 class="">Pago exitoso</h3>
+
+        <div class="divCenter mt-5">
+            <p class="mb-0 text-secondary">Número de recibo</p>
+            <h1 class="mb-2">#10025010001</h1>
+            <p class="text-secondary">Por favor, conserve su recibo como comprobante de pago.</p>
+        </div>
+
+        <div class="mt-3">
+            <img src="~/images/factura.png" width="120" alt="Recibo">
+        </div>
+
+        <div class="divCenter mt-5">
+            <a href="#" class="link-primary mb-2">Enviar comprobante</a>
+            <img class="ms-2" src="~/images/sms.png" width="50" alt="Mensaje de texto" />
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="btn btn-secondary btn-lg rounded-pill">Regresar a la página principal</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fisco.Pay</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Tax/TotalAmountToBePaid.js"></script>
+    <style>
+        .divCenter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="ms-4">
+            <h1 style="color: #FFFFFF">Alcaldía de Valledupar</h1>
+            <h6 style="color: #FFFFFF">Bienvenidos al portal de pagos</h6>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="divCenter mt-0 mb-4">
+            <h3>Monto total a pagar</h3>
+            <h1>$650.000</h1>
+        </div>
+
+        <div class="container mt-4">
+            <table class="table table-bordered table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th></th>
+                        <th>Periodo</th>
+                        <th>Valor</th>
+                        <th>Dcto</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2025</td>
+                        <td>$200.000</td>
+                        <td>$50.000</td>
+                        <td>$150.000</td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2024</td>
+                        <td>$100.000</td>
+                        <td>$0</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2023</td>
+                        <td>$100.000</td>
+                        <td>$0</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2022</td>
+                        <td>$100.000</td>
+                        <td>$0</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2021</td>
+                        <td>$100.000</td>
+                        <td>$0</td>
+                        <td>$100.000</td>
+                    </tr>
+                    <tr>
+                        <td><input class="form-check-input" type="checkbox" checked></td>
+                        <td>2020</td>
+                        <td>$100.000</td>
+                        <td>$0</td>
+                        <td>$100.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="footer m-0 p-0 ms-1">
+        <button id="backButton" class="btn btn-secondary btn-lg rounded-pill ms-2 me-2">Atrás</button>
+        <button id="continueButton" class="btn btn-success btn-lg rounded-pill ms-2 me-2">Continuar</button>
+    </footer>
+</body>
+</html>
